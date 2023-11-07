@@ -1,11 +1,13 @@
-# Speech_Recognition
-## 音声文字起こしの流れ
+# 音声文字起こし
+## 文字に起こすまでの流れ
 1. 音声ファイル(mp3 or mp4)を作成
 2. 音声ファイルをwav形式に変換
 3. wav形式の音声ファイルをtxtファイルに文字起こしする
 ## 環境構築
-### windowsにwslをインストールする
-- [WSLを使用してWindowsにLinuxをインストールする方法](https://learn.microsoft.com/ja-jp/windows/wsl/install)
+### 音声ファイルを作成
+- [Windows ボイスレコーダー](https://apps.microsoft.com/detail/9WZDNCRFHWKN?hl=ja-jp&gl=JP)を使って、ボイスをファイルにする。
+### windowsにwslをインストールする(このあとのコマンドを実行するため)
+- [WSLを使用してWindowsにLinuxをインストールする方法](https://learn.microsoft.com/ja-jp/windows/wsl/install)を参考にして、WSLをWindowsにインストールする。
 ### 音声ファイルの形式(mp3, mp4など）をwav形式に変換する方法
 ```bash
 sudo apt install ffmpeg
