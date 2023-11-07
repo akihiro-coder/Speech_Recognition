@@ -10,11 +10,13 @@
 - [WSLを使用してWindowsにLinuxをインストールする方法](https://learn.microsoft.com/ja-jp/windows/wsl/install)を参考にして、WSLをWindowsにインストールする。
 ### 音声ファイルの形式(mp3, mp4など）をwav形式に変換する方法
 ```bash
+# WSLの画面を開いて以下のコマンドを一行ずつ実行する。
 sudo apt install ffmpeg
 ffmpeg -i "test_speech.mp3" -f wav "test_speech.wav"
 ```
 ### インストール
 ```bash
+git clone https://github.com/akihiro-coder/Speech_Recognition.git
 # 仮想環境の作成
 python3 -m venv venv
 # 仮想環境のアクティブ化
@@ -29,4 +31,3 @@ python3 -m pip install -r requirements.txt
 python3 recognition.py
 (recognition.pyは音声ファイル(wav形式)を読み込み、テキストファイル(audio_text.txt)に文字起こしするプログラムです)
 ```
-
